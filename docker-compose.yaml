@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  ghost:
+    image: ghost:latest
+    network_mode: host
+    container_name: ghost-blog
+    environment:
+      - NODE_ENV=production # or set to development
+    ports:
+      - "2370:2368" # You can choose basicly any external port
+   
+    volumes: 
+      - ./content:/var/lib/ghost/content
+      - ./config.production.json:/var/lib/ghost/config.production.json # set to dev if needed
+    restart: always
+

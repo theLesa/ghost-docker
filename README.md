@@ -1,0 +1,1 @@
+# Basic Ghost Blog configuration for docker compose #
