@@ -7,7 +7,7 @@ services:
     environment:
       - NODE_ENV=production # or set to development
     ports:
-      - "2370:2368" # You can choose basicly any external port
+      - "2368:2368" # You can choose basicly any external port
    
     volumes: 
       - ./content:/var/lib/ghost/content

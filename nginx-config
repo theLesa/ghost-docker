@@ -1,5 +1,5 @@
 upstream ghost{
-    server ghost.localhost:2368;
+    server localhost:2368;
 }
 server{
     listen 80;
