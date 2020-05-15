@@ -17,6 +17,13 @@ I use nginx as a reversy proxy, so I also added my config file for the blog:
 * Go to `ghost.localhost/ghost` and setup your account
 * Enjoy experimenting with ghost
 
+### Custom port ###
+If you want to set custom port, rather than 2368:
+* Set wanted port in the config file
+* In nginx config file set that port to upstream
+* In docker-compose set the port as external and leave 2368 as internal
+Voila 
+
 ### Links ###
 
 * [Ghost Blog](https://ghost.org/)
